@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     ]
   },
   nitro: {
+    preset: 'vercel-edge',
     experimental: {
       wasm: true
     },
