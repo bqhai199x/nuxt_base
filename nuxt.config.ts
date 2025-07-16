@@ -17,16 +17,15 @@ export default defineNuxtConfig({
     experimental: {
       wasm: true
     },
-    rollupConfig: {
-      external: ['@prisma/client']
+    esbuild: {
+      options: {
+        target: 'esnext'
+      }
     }
   },
   vite: {
     define: {
       global: 'globalThis'
-    },
-    optimizeDeps: {
-      exclude: ['@prisma/client']
     },
     css: {
       preprocessorOptions: {
