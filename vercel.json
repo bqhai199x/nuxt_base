@@ -1,6 +1,6 @@
 {
   "functions": {
-    ".output/server/**/*.mjs": {
+    ".output/server/index.mjs": {
       "maxDuration": 30
     }
   },
